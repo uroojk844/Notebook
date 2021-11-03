@@ -1,0 +1,70 @@
+body{
+    user-select: none;
+}
+
+.name {
+    font-size: 18px;
+}
+
+input, button{
+    outline: none;
+}
+
+.container{
+    height: 400px;
+    overflow-y: scroll;
+}
+
+#main{
+    width: 100%;
+    height: calc(100vh - 76px);
+    overflow: auto;
+    outline: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+#main::-webkit-scrollbar{
+    width: 8px;
+}
+
+#main::-webkit-scrollbar-thumb{
+    background-color: #333;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-flow: wrap;
+    width: 100%;
+}
+
+footer .options{
+    background-color: white;
+    border: 0;
+    height: 38px;
+    text-align: center;
+    line-height: 38px;
+    flex-grow: 1;
+}
+
+#moreOptions{
+    position: absolute;
+    bottom: 50px;
+    width: 95%;
+    left: 2.5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#moreOptions .options{
+    background-color: white;
+    border: 0;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    min-width: 50px;
+    flex-grow: 1;
+}
